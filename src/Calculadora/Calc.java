@@ -28,6 +28,52 @@ public class Calc {
 	    System.out.println("0.Sair");  
 	    System.out.println("Operação: ");  
 	    opcao = input.nextInt();
-	  
-}
+	    while (opcao != 0) {
+	    	if (opcao == 1) {
+	    	    Scanner input1 = new Scanner(System.in);  
+	    		System.out.println("Qual o primeiro numero: ");
+	    		 num1 = input1.nextInt();
+	    		System.out.println("Qual o segundo numero: ");
+	    		 num2 = input1.nextInt();
+	    			int operacao = c.som(num1, num2);
+	    			System.out.println(operacao);
+	    		break;
+	    	}
+	    	 	if (opcao == 2) {
+	    	 		  Scanner input1 = new Scanner(System.in);  
+	  	    		System.out.println("Qual o primeiro numero: ");
+	  	    		 num1 = input1.nextInt();
+	  	    		System.out.println("Qual o segundo numero: ");
+	  	    		 num2 = input1.nextInt();
+	  	    			int operacao = c.sub(num1, num2);
+	  	    			System.out.println(operacao);
+		    		break;
+		    		}
+		    	 	if (opcao == 3) {
+		    	 		  Scanner input1 = new Scanner(System.in);  
+		  	    		System.out.println("Qual o primeiro numero: ");
+		  	    		 num1 = input1.nextInt();
+		  	    		System.out.println("Qual o segundo numero: ");
+		  	    		 num2 = input1.nextInt();
+		  	    			int operacao = c.mult(num1, num2);
+		  	    			System.out.println(operacao);
+			    		break;
+		    	 	}
+			    	 	if (opcao == 4) {
+			    	 		  Scanner input1 = new Scanner(System.in);  
+			  	    		System.out.println("Qual o primeiro numero: ");
+			  	    		 num1 = input1.nextInt();
+			  	    		System.out.println("Qual o segundo numero: ");
+			  	    		 num2 = input1.nextInt();
+			  	    			int operacao = c.div(num1, num2);
+			  	    			System.out.println(operacao);
+				    		break;
+				    		}
+			    	 	else{
+					    		System.out.println("????");
+					    		break;
+					    		}
+	    }
+
+	}
 }
