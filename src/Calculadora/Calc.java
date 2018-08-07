@@ -2,7 +2,9 @@ package Calculadora;
 
 import java.util.Scanner;
 public class Calc {
+	/*Início do programa*/
 	
+	/*Criação das operações*/
 	public int som(int num1, int num2) {
 		return num1 + num2;
 	}
@@ -15,11 +17,16 @@ public class Calc {
 	public int mult(int num1, int num2){
 		return num1 - num2;
 	}
+	
+	/*Criação das variáveis*/
 	public static void main (String args[]){
 		Calc c = new Calc();
 		int opcao = 5;
 		int num1;
 		int num2;
+		
+		
+		/*Criação da interface*/
 	      Scanner input = new Scanner(System.in);  
 	    System.out.println("1.Soma");  
 	    System.out.println("2.Subtracao");  
@@ -28,6 +35,7 @@ public class Calc {
 	    System.out.println("0.Sair");  
 	    System.out.println("Operação: ");  
 	    opcao = input.nextInt();
+	    /*Criação das condições*/
 	    while (opcao != 0) {
 	    	if (opcao == 1) {
 	    	    Scanner input1 = new Scanner(System.in);  
